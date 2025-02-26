@@ -39,9 +39,14 @@ const Login = () => {
   const [avatar, setAvatar] = useState(null);
 
   return (
-
-    // Container is a Material-UI component that centers its children.
-    // "main" is used to specify the HTML element inside is main part of webpage, helps in SEO.
+    <div
+    style={{
+     background: `linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d), 
+                 url("https://www.transparenttextures.com/patterns/hexellence.png")`,
+     backgroundSize: "cover",
+   }}>
+    {/* // Container is a Material-UI component that centers its children.
+    // "main" is used to specify the HTML element inside is main part of webpage, helps in SEO. */}
     <Container component={"main"} maxWidth="xs"
       sx={{
         height: '100vh',
@@ -230,7 +235,7 @@ const Login = () => {
       </Paper>
 
     </Container>
-
+    </div>
   )
 }
 
